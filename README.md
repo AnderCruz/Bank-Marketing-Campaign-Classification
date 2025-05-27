@@ -1,7 +1,3 @@
-Here's your project description translated to English for GitHub:
-
----
-
 # Bank Marketing Campaign - Investment Subscription Prediction
 
 ## Project Overview
