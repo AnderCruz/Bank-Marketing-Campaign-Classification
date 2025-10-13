@@ -1,30 +1,12 @@
-# Bank Marketing Campaign - Investment Subscription Prediction
-
-Of course\! Here is a detailed GitHub README for the project, written in English.
-
------
-
 # Bank Marketing Investment Prediction
 
 This project analyzes data from a bank's marketing campaign to predict whether a client will subscribe to a term deposit investment. Using machine learning, this notebook walks through the entire process from data exploration and preprocessing to model training, evaluation, and selection.
 
-## 📋 Table of Contents
-
-  - [Project Goal](https://www.google.com/search?q=%23-project-goal)
-  - [Dataset](https://www.google.com/search?q=%23-dataset)
-  - [Workflow](https://www.google.com/search?q=%23-workflow)
-  - [Exploratory Data Analysis (EDA)](https://www.google.com/search?q=%23-exploratory-data-analysis-eda)
-  - [Modeling and Evaluation](https://www.google.com/search?q=%23-modeling-and-evaluation)
-  - [Results](https://www.google.com/search?q=%23-results)
-  - [Technologies Used](https://www.google.com/search?q=%23-technologies-used)
-  - [How to Use the Model](https://www.google.com/search?q=%23-how-to-use-the-model)
-  - [How to Run This Project](https://www.google.com/search?q=%23-how-to-run-this-project)
-
-## 🎯 Project Goal
+## Project Goal
 
 The primary objective is to build a classification model that can accurately predict if a bank client will subscribe to a term deposit based on data from marketing campaigns. This helps the bank to better target its marketing efforts and understand the key factors that influence a client's decision.
 
-## 💾 Dataset
+## Dataset
 
 The dataset used is `investment_marketing.csv`, which contains information about clients contacted during the campaign.
 
@@ -42,7 +24,7 @@ The dataset used is `investment_marketing.csv`, which contains information about
 | `numero_contatos`       | `number_of_contacts`      | Number of contacts performed during this campaign. | Numerical |
 | **`aderencia_investimento`** | **`investment_subscribed`** | **(Target)** Has the client subscribed to the investment? ('sim', 'nao'). | Categorical|
 
-## ⚙️ Workflow
+## Workflow
 
 The project follows a standard machine learning pipeline:
 
@@ -58,7 +40,7 @@ The project follows a standard machine learning pipeline:
       * **K-Nearest Neighbors (KNN)**: A distance-based algorithm. The data for this model is first normalized using `MinMaxScaler`.
 5.  **Model Selection & Saving**: The models' accuracies are compared, and the best-performing model is selected. The final model and its associated data transformer are saved as `.pkl` files for future use.
 
-## 📊 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 The EDA provided several key insights:
 
@@ -67,7 +49,7 @@ The EDA provided several key insights:
   - Clients with a higher education level (`superior`) showed a proportionally higher rate of subscription compared to other levels.
   - Other variables like `age`, `balance`, and `marital_status` also showed some influence on the subscription decision.
 
-## 📈 Modeling and Evaluation
+## Modeling and Evaluation
 
 The data was split into a training set (75%) and a testing set (25%). The following models were trained and their accuracy was measured on the test set.
 
@@ -75,7 +57,7 @@ The data was split into a training set (75%) and a testing set (25%). The follow
   - **Decision Tree**: This model was chosen for its high explainability. To avoid overfitting (where the model learns the training data too well but fails on new data), its `max_depth` was tuned to 3. This resulted in a model that generalizes better to unseen data.
   - **K-Nearest Neighbors (KNN)**: As a distance-based algorithm, KNN requires features to be on a similar scale. Therefore, the data was normalized using `MinMaxScaler` before training.
 
-## 🏆 Results
+## Results
 
 The final accuracy scores for each model on the test data were as follows:
 
@@ -87,7 +69,7 @@ The final accuracy scores for each model on the test data were as follows:
 
 The **Decision Tree Classifier** achieved the highest accuracy on the test set and was selected as the final model. It provides a significant improvement over the baseline and performs better than the KNN model in this scenario.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
   - **Python 3**
   - **Pandas**: For data manipulation and analysis.
@@ -96,7 +78,7 @@ The **Decision Tree Classifier** achieved the highest accuracy on the test set a
   - **Matplotlib**: For visualizing the decision tree.
   - **Pickle**: For saving and loading the trained model.
 
-## 🚀 How to Use the Model
+## How to Use the Model
 
 The best model (`DecisionTreeClassifier`) and its `OneHotEncoder` have been saved to `modelo_arvore.pkl` and `modelo_onehotenc.pkl`, respectively. You can use these files to make predictions on new data.
 
@@ -141,7 +123,7 @@ else:
 # Expected Output: Prediction: The client WILL subscribe to the investment.
 ```
 
-## 📦 How to Run This Project
+## How to Run This Project
 
 To run this project on your local machine, follow these steps:
 
