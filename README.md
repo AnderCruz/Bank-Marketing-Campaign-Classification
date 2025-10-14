@@ -73,7 +73,7 @@ The **Decision Tree Classifier** achieved the highest accuracy on the test set a
 
   - **Python 3**
   - **Pandas**: For data manipulation and analysis.
-  - **Scikit-learn**: For data preprocessing, model training, and evaluation.
+  - **Scikit-learn**: For data preprocessing, model training and evaluation.
   - **Plotly**: For creating interactive data visualizations.
   - **Matplotlib**: For visualizing the decision tree.
   - **Pickle**: For saving and loading the trained model.
